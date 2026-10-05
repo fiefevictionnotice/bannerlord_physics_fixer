@@ -11,8 +11,8 @@
          fixed counterpart while preserving position, rotation, and all other entity data.
 
     The fixed prefabs are:
-      module_wall_plank_a  ->  module_wall_plank_a_unfucked_by_fief
-      module_wall_plank_b  ->  module_wall_plank_b_unfucked_by_fief
+      module_wall_plank_a  ->  module_wall_plank_a_fixed_by_fief
+      module_wall_plank_b  ->  module_wall_plank_b_fixed_by_fief
 
 .PARAMETER Path
     One or more .xscene files or directories containing scene.xscene files.
@@ -153,8 +153,8 @@ begin {
     # -------------------------------------------------------------------------
 
     $replacementMap = @{
-        'module_wall_plank_a' = 'module_wall_plank_a_unfucked_by_fief'
-        'module_wall_plank_b' = 'module_wall_plank_b_unfucked_by_fief'
+        'module_wall_plank_a' = 'module_wall_plank_a_fixed_by_fief'
+        'module_wall_plank_b' = 'module_wall_plank_b_fixed_by_fief'
     }
 
     $pattern = 'prefab="(module_wall_plank_[ab])"'

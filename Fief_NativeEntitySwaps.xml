@@ -1,5 +1,5 @@
 <prefabs>
-	<game_entity name="module_wall_plank_a_unfucked_by_fief" old_prefab_name="">
+	<game_entity name="module_wall_plank_a_fixed_by_fief" old_prefab_name="">
 		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
 		<children>
 			<game_entity name="fief_wooden_platform_2_plank_f_column" old_prefab_name="">
@@ -33,7 +33,7 @@
 			</game_entity>
 		</children>
 	</game_entity>
-	<game_entity name="module_wall_plank_b_unfucked_by_fief" old_prefab_name="">
+	<game_entity name="module_wall_plank_b_fixed_by_fief" old_prefab_name="">
 		<transform position="0.000, 0.000, 0.000" rotation_euler="0.000, 0.000, 0.000"/>
 		<children>
 			<game_entity name="fief_wooden_platform_2_plank_f_column" old_prefab_name="">

@@ -11,8 +11,8 @@ This bug has been reported on the TaleWorlds forums: https://forums.taleworlds.c
 TaleWorlds appears to have been aware of this prior to it being publicly reported. In the native **Town Outskirts** map, every `module_wall_plank_b` entity has had its physics shape manually deleted and replaced with invisible editor collision cubes - a workaround that only applies to that one map without fixing the underlying entity's broken physics shape. 
 
 **Replacements:**
-- `module_wall_plank_a` → `module_wall_plank_a_unfucked_by_fief`
-- `module_wall_plank_b` → `module_wall_plank_b_unfucked_by_fief`
+- `module_wall_plank_a` → `module_wall_plank_a_fixed_by_fief`
+- `module_wall_plank_b` → `module_wall_plank_b_fixed_by_fief`
 
 Position, rotation, and scale are preserved.
 
