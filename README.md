@@ -1,6 +1,6 @@
-# bannerlord_physics_unf-cker
+# bannerlord_physics_fixer
 
-Unf*cks the broken physics shape for `module_wall_plank_a` and `module_wall_plank_b` by replacing them with an identically sized prefab with working collision. You will need to break the prefab in the editor afterwards for it to work correctly in native MP for other players.
+Fixes the broken physics shape for `module_wall_plank_a` and `module_wall_plank_b` by replacing them with an identically sized prefab with working collision. You will need to break the prefab in the editor afterwards for it to work correctly in native MP for other players.
 
 ## The bug
 
@@ -23,7 +23,7 @@ Position, rotation, and scale are preserved.
 Keep these two files in the same folder:
 
 ```
-bannerlord_physics_unf-cker.ps1
+bannerlord_physics_fixer.ps1
 Fief_NativeEntitySwaps.xml
 ```
 
@@ -45,7 +45,7 @@ Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 ```
 Alternatively, use this in each session:
 ```
-Set-ExecutionPolicy -Scope Process RemoteSigned; .\bannerlord_physics_unf-cker.ps1
+Set-ExecutionPolicy -Scope Process RemoteSigned; .\bannerlord_physics_fixer.ps1
 ```
 
 ---
@@ -58,28 +58,28 @@ Open PowerShell in the folder containing the two bundle files, then:
 
 Copy your map folder (the one containing `scene.xscene`) into the same folder as the script, then just run:
 ```
-.\bannerlord_physics_unf-cker.ps1
+.\bannerlord_physics_fixer.ps1
 ```
 The script will detect any map folders sitting alongside it automatically. Works with any map - Native, Multiplayer module, your own mod, anything.
 
 **Option B - Point it at any scene directly:**
 ```
-.\bannerlord_physics_unf-cker.ps1 -Path "C:\path\to\any\map_folder\scene.xscene"
+.\bannerlord_physics_fixer.ps1 -Path "C:\path\to\any\map_folder\scene.xscene"
 ```
 
 **Option C - Point it at a folder and fix everything inside:** In practice, a terrible idea to use against the Native or Multiplayer modules in recursive mode!
 ```
-.\bannerlord_physics_unf-cker.ps1 -Path "C:\path\to\ModuleNameHere\SceneObj" -Recurse
+.\bannerlord_physics_fixer.ps1 -Path "C:\path\to\ModuleNameHere\SceneObj" -Recurse
 ```
 
 **Non-standard Bannerlord install location:**
 ```
-.\bannerlord_physics_unf-cker.ps1 -Path "..." -BannerlordPath "D:\Games\Mount & Blade II Bannerlord"
+.\bannerlord_physics_fixer.ps1 -Path "..." -BannerlordPath "D:\Games\Mount & Blade II Bannerlord"
 ```
 
 **Dry run - see what would change without touching any files:**
 ```
-.\bannerlord_physics_unf-cker.ps1 -WhatIf
+.\bannerlord_physics_fixer.ps1 -WhatIf
 ```
 
 The script will:

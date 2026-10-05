@@ -34,13 +34,13 @@
     Skip creating a .bak backup before modifying each scene file.
 
 .EXAMPLE
-    .\bannerlord_physics_unf-cker.ps1 -Path "C:\...\YourMod\SceneObj\your_scene\scene.xscene"
+    .\bannerlord_physics_fixer.ps1 -Path "C:\...\YourMod\SceneObj\your_scene\scene.xscene"
 
 .EXAMPLE
-    .\bannerlord_physics_unf-cker.ps1 -Path "C:\...\YourMod\SceneObj" -Recurse
+    .\bannerlord_physics_fixer.ps1 -Path "C:\...\YourMod\SceneObj" -Recurse
 
 .EXAMPLE
-    .\bannerlord_physics_unf-cker.ps1 -Path "C:\...\scene.xscene" -WhatIf
+    .\bannerlord_physics_fixer.ps1 -Path "C:\...\scene.xscene" -WhatIf
 #>
 
 [CmdletBinding(SupportsShouldProcess)]
